@@ -1,17 +1,21 @@
 import React from 'react';
-import { createDrawerNavigator } from '@react-navigation/drawer';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 import Home from '../pages/Home';
-import Vehicles from '../pages/Vehicles';
 
-const Drawer = createDrawerNavigator();
+const Stack = createNativeStackNavigator();
 
-function Routes(){
+function StackRoutes(){
   return(
-    <Drawer.Navigator>
-      <Drawer.Screen name="Hawks Cars" component={Home} />
-      <Drawer.Screen name="Vehicles" component={Vehicles} />
-    </Drawer.Navigator>
+    <Stack.Navigator>
+      <Stack.Screen 
+      name="Home" 
+      component={Home} 
+      options={{headerShown: false}}
+      />
+
+    </Stack.Navigator>
   )
 }
-export default Routes;
+
+export default StackRoutes;
