@@ -28,3 +28,5 @@ export const SearchButton = styled.TouchableOpacity`
   align-items: center;
   justify-content: center;
 `;
+export const CarList = styled.FlatList``;
+export const CarContainer = styled.View``;

@@ -4,7 +4,9 @@ import {
   Container, 
   SearchContainer, 
   Input, 
-  SearchButton
+  SearchButton,
+  CarList,
+  CarContainer
 } from './styles';
 
 import { Feather } from '@expo/vector-icons';
@@ -25,6 +27,10 @@ function Home(){
           <Feather name="search" size={30} color="#000"/>
         </SearchButton>
       </SearchContainer>
+
+      <CarContainer>
+        <CarList />
+      </CarContainer>
     </Container>
   )
 }
